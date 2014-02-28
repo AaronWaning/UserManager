@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<title>‘ÀŒ¨œµÕ≥</title>
+
+<link rel="stylesheet" href="css/index.css">
+
+<script type="text/javascript" src="dojo-release-1.9.3/dojo/dojo.js"></script>
+<script type="text/javascript" src="js/src.js"></script>
+<script type="text/javascript">
+require(["app/index/IndexLayout","dojo/domReady!"], function(IndexLayout){
+	new IndexLayout().init();
+});
+</script>
+</head>
+<body class="tundra">
+	<div class="outerbar">
+		<div dojoType="dojox.widget.FisheyeList" itemWidth="50"
+			itemHeight="50" itemMaxWidth="200" itemMaxHeight="200"
+			orientation="horizontal" effectUnits="2" itemPadding="10"
+			attachEdge="top" labelEdge="bottom" id="fisheye1">
+			<div dojoType="dojox.widget.FisheyeListItem" id="item1"
+				onclick="alert('click on ' + this.label + '(from widget id ' + this.widgetid + ')!');"
+				label="Item 1" iconSrc="images/index/icon_browser.png"></div>
+
+			<div dojoType="dojox.widget.FisheyeListItem" label="Item 2"
+				iconSrc="images/index/icon_calendar.png"></div>
+
+			<div dojoType="dojox.widget.FisheyeListItem" label="Item 3"
+				onclick="alert('click on ' + this.label + '(from widget id ' + this.widgetid + ')!');"
+				iconSrc="images/index/icon_email.png"></div>
+
+			<div dojoType="dojox.widget.FisheyeListItem"
+				iconSrc="images/index/icon_texteditor.png"></div>
+
+			<div dojoType="dojox.widget.FisheyeListItem"
+				label="Really Long Item Label"
+				iconSrc="images/index/icon_update.png"></div>
+
+			<div dojoType="dojox.widget.FisheyeListItem"
+				iconSrc="images/index/icon_users.png"></div>
+		</div>
+	</div>
+
+	<div id="content" class="content"></div>
+</body>
+</html>
+

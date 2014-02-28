@@ -1,0 +1,22 @@
+{
+    current:1,
+	databases:[{
+		jndi:"",
+		driverName:"oracle.jdbc.driver.OracleDriver",
+		url:"jdbc:oracle:thin:@172.18.68.79:1521:zjdb",
+		username:"pogis",
+		password:"pogis",
+		poolSize:10,
+		validationSQL:"select sysdate from dual",
+		validationTimeout:1000
+	},{
+		jndi:"",
+		driverName:"com.mysql.jdbc.Driver",
+		url:"jdbc:mysql://localhost:3306/dbo",
+		username:"root",
+		password:"111111",
+		poolSize:10,
+		validationSQL:"desc log",
+		validationTimeout:1000
+	}]
+}
