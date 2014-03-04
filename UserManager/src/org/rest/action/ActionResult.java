@@ -3,7 +3,7 @@ package org.rest.action;
 
 
 /**
- * ·µ»Ø½á¹û
+ * è¿”å›ç»“æœ
  * @author Administrator
  *
  */
@@ -14,7 +14,7 @@ public class ActionResult {
 	private String errorMessage;
 	
 	public ActionResult() {
-		setError(99,"³ÌĞòÄÚ²¿´íÎó£ºÃ»ÓĞÉèÖÃ·µ»Ø½á¹û");
+		setError(99,"ç¨‹åºå†…éƒ¨é”™è¯¯ï¼šæ²¡æœ‰è®¾ç½®è¿”å›ç»“æœ");
 	}
 	public int getErrorId() {
 		return errorId;

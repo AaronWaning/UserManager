@@ -12,9 +12,9 @@
 	},{
 		jndi:"",
 		driverName:"com.mysql.jdbc.Driver",
-		url:"jdbc:mysql://localhost:3306/dbo",
+		url:"jdbc:mysql://localhost:3306/companymanager",
 		username:"root",
-		password:"111111",
+		password:"admin",
 		poolSize:10,
 		validationSQL:"desc log",
 		validationTimeout:1000

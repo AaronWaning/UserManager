@@ -13,6 +13,8 @@ import com.google.gson.JsonParseException;
 
 public class OracleUtilTest {
 
+	public static void main(String[] args) {
+	}
 	@Test
 	public void testImportfromtext() {
 		try {
@@ -37,7 +39,7 @@ public class OracleUtilTest {
 		try {
 			ConnectionUtils.initContext(SystemConfigUtils.load());
 			Connection conn=ConnectionUtils.getConnection();
-			OracleUtil.select( "EZCRM_DIC_ZD", conn);
+			OracleUtil.select( "user", conn);
 			
 		} catch (JsonParseException e) {
 			// TODO Auto-generated catch block

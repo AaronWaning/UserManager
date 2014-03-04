@@ -7,7 +7,7 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 
-import org.apache.tomcat.dbcp.dbcp.BasicDataSource;
+import org.apache.commons.dbcp.BasicDataSource;
 import org.config.DataBase;
 import org.config.SystemConfig;
 
@@ -40,8 +40,7 @@ public class ConnectionUtils {
 		bds.setUsername(datas.getUsername());
 		bds.setPassword(datas.getPassword());
 		bds.setValidationQuery(datas.getValidationSQL());
-		bds.setValidationQueryTimeout(datas.getValidationTimeout());
-		bds.setNumTestsPerEvictionRun(1000);
+		bds.setNumTestsPerEvictionRun(datas.getValidationTimeout());
 		return bds;
 	}
 		

@@ -17,7 +17,7 @@ import org.rest.stream.BigFileOutputStream;
 @Path("/")
 public class DownFileDemo {
 	/**   
-     * ÏÂÔØ¶ÔÏó   
+     * ä¸‹è½½å¯¹è±¡   
      * @param bucketName   
      * @param objectName   
      * @param request   
@@ -36,7 +36,7 @@ public class DownFileDemo {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}  
-        //Ö±½Ó·µ»ØÊä³öÁ÷    
+        //ç›´æ¥è¿”å›è¾“å‡ºæµ    
         return Response.ok(new BigFileOutputStream(fos)).build();  
         }
 }
